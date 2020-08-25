@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homeFragment">
+
+
+<!--Home section-->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.securesoft.lucid.ui.home.HomeFragment"
+        android:label="@string/label_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_poltriFragment"
+            app:destination="@id/poltriFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_feedFragment"
+            app:destination="@id/feedFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_probFragment"
+            app:destination="@id/probFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_infoFragment"
+            app:destination="@id/infoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.securesoft.lucid.ui.home.feedconversion.FeedFragment"
+        android:label="@string/label_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/poltriFragment"
+        android:name="com.securesoft.lucid.ui.home.poultry.PoltriFragment"
+        android:label="@string/label_poultry"
+        tools:layout="@layout/fragment_poltri" >
+        <action
+            android:id="@+id/action_poltriFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/probFragment"
+        android:name="com.securesoft.lucid.ui.home.problemnsol.ProbFragment"
+        android:label="@string/label_problem"
+        tools:layout="@layout/fragment_prob" />
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.securesoft.lucid.ui.home.info.InfoFragment"
+        android:label="@string/label_info"
+        tools:layout="@layout/fragment_info">
+        <action
+            android:id="@+id/action_poltriFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+   <!-- Bottom navigation section-->
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.securesoft.lucid.ui.help.HelpFragment"
+        android:label="@string/label_help"
+        tools:layout="@layout/fragment_help" />
+
+<!--Navigation Drware section-->
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.securesoft.lucid.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/devFragment"
+        android:name="com.securesoft.lucid.ui.about.AboutFragment"
+        android:label="@string/label_dev"
+        tools:layout="@layout/fragment_dev" />
+
+</navigation>

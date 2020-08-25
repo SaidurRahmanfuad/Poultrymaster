@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Lucid</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <!--bottom option menu-->
+    <string name="menu_service">Service</string>
+    <string name="menu_menu">Menu</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_help">Help</string>
+
+    <string name="menu_about">App Summary</string>
+    <string name="menu_share">Share with your Friends</string>
+    <string name="menu_rating">Give me Rating</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_feed">Feed Conversion Ratio</string>
+    <string name="label_home">Home</string>
+    <string name="label_poultry">Poultry Performance</string>
+    <string name="label_problem">Problem And Solution</string>
+    <string name="label_info">Information Hub</string>
+    <string name="label_help">Need Help? Call Expart</string>
+    <string name="label_dev">Know Developer</string>
+</resources>
