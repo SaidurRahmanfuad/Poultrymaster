@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,11 +8,107 @@
     tools:context=".ui.help.HelpFragment">
 
     <!-- TODO: Update blank fragment layout -->
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recycler_doctorshow"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
+    <!-- <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recycler_doctorshow"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
 
-   </androidx.recyclerview.widget.RecyclerView>
+     </androidx.recyclerview.widget.RecyclerView>-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/callcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dotor_img"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/devsa"
+                app:civ_border_width="2dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/doctorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Dr. Srabon Hasan Sajal"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/doctordesig"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:text="DVM"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/callnow"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/themeColor"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_call_black">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Call Now!"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="10sp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

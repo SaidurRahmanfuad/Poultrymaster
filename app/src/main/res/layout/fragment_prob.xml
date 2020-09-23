@@ -1,15 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.problemnsol.ProbFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:context=".ui.home.problemnsol.Team">
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Problem and solution"
-        android:gravity="center"/>
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/devsa">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+               >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sajal"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sajaldeg"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/degree_sj"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sajalp_vrct"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sajalphn"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sajalweb"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sajalmail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/sayed">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/said"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/vrct"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dgvr"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ff"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/nmb"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fy"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/obydulla">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fdg"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/gg"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/gh"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/gj"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

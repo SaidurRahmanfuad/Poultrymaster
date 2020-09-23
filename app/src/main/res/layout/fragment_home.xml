@@ -1,147 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginBottom="?attr/actionBarSize"
     tools:context=".ui.home.HomeFragment">
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/_5sdp"
-        android:padding="@dimen/_1sdp"
-        android:layout_weight="0.25">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:elevation="@dimen/_2sdp"
-            app:cardCornerRadius="@dimen/_8sdp">
-
-            <com.smarteist.autoimageslider.SliderView
-                android:id="@+id/imageSlider"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fitsSystemWindows="true"
-                app:sliderAnimationDuration="600"
-                app:sliderAutoCycleDirection="back_and_forth"
-                app:sliderAutoCycleEnabled="true"
-                app:sliderIndicatorAnimationDuration="600"
-                app:sliderIndicatorGravity="center_horizontal|bottom"
-                app:sliderIndicatorMargin="@dimen/_19sdp"
-                app:sliderIndicatorOrientation="horizontal"
-                app:sliderIndicatorPadding="@dimen/_2sdp"
-                app:sliderIndicatorRadius="@dimen/_1sdp"
-                app:sliderIndicatorSelectedColor="#5A5A5A"
-                app:sliderIndicatorUnselectedColor="#0091EA"
-                app:sliderScrollTimeInSec="1"
-                app:sliderStartAutoCycle="true" />
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-    <LinearLayout
         android:layout_marginBottom="?attr/actionBarSize"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/poultryId"
+                android:id="@+id/companychecksId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/_8sdp"
+                android:layout_margin="@dimen/_6sdp"
                 android:layout_weight="1"
                 android:longClickable="true"
-                android:backgroundTint="@color/colorPrimaryDark"
+                android:backgroundTint="@color/white"
                 app:cardCornerRadius="@dimen/_4sdp">
 
                 <LinearLayout
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="@dimen/_5sdp"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:scaleType="fitXY"
                         android:layout_width="match_parent"
-
-                        android:layout_height="@dimen/_50sdp"
+                        android:layout_height="@dimen/_120sdp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_ac_unit_black_24dp">
+                        android:src="@drawable/cmpnychk">
 
                     </ImageView>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_2sdp"
-                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginLeft="@dimen/_4sdp"
                         android:layout_marginRight="@dimen/_4sdp"
                         android:layout_marginBottom="@dimen/_2sdp"
 
-                        android:background="@color/white"></View>
+                        android:background="@color/black"></View>
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:text="Poultry Performane"
-                        android:textColor="#ffff"
+                        android:text="@string/Companybreed"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
                         android:textStyle="bold">
 
                     </TextView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/feedId"
+                android:id="@+id/hubbId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/_8sdp"
+                android:layout_margin="@dimen/_6sdp"
                 android:layout_weight="1"
                 android:longClickable="true"
-                android:backgroundTint="@color/themeColor"
+                android:backgroundTint="@color/white"
                 app:cardCornerRadius="@dimen/_4sdp">
 
                 <LinearLayout
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="@dimen/_5sdp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_gravity="center"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/ic_ac_unit_black_24dp"></ImageView>
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arbor">
+
+                    </ImageView>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_2sdp"
-                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginLeft="@dimen/_4sdp"
                         android:layout_marginRight="@dimen/_4sdp"
                         android:layout_marginBottom="@dimen/_2sdp"
-                        android:background="@color/white"></View>
+                        android:background="@color/black">
+
+                    </View>
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Feed Conversion Ratio"
 
-                        android:textColor="#ffff"
+                        android:gravity="center"
+                        android:id="@+id/hubbtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/Hubbard"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
                         android:textStyle="bold">
 
                     </TextView>
@@ -155,96 +127,740 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.25"
-
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <androidx.cardview.widget.CardView
-
-                android:id="@+id/problemId"
+                android:id="@+id/cobbId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/_8sdp"
+                android:layout_margin="@dimen/_6sdp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/themeColor"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
                 app:cardCornerRadius="@dimen/_4sdp">
 
                 <LinearLayout
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="@dimen/_5sdp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_gravity="center"
+
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/ic_ac_unit_black_24dp">
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cobb">
 
                     </ImageView>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_2sdp"
-                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginLeft="@dimen/_4sdp"
                         android:layout_marginRight="@dimen/_4sdp"
-                        android:layout_marginBottom="@dimen/_2sdp"                    android:background="@color/white"></View>
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+                        android:background="@color/black"></View>
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Problems And Solution"
-                        android:textColor="#ffff"
+
+                        android:gravity="center"
+                        android:id="@+id/cobbtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/Cobb"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/_2sdp"
                         android:textSize="16sp"
                         android:textStyle="bold">
 
                     </TextView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
-                android:id="@+id/infoId"
+
+                android:id="@+id/rossId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/_8sdp"
+                android:layout_margin="@dimen/_6sdp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/themeColor"
+                android:backgroundTint="@color/white"
                 app:cardCornerRadius="@dimen/_4sdp">
 
                 <LinearLayout
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="@dimen/_5sdp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_gravity="center"
+
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/ic_ac_unit_black_24dp">
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ross">
 
                     </ImageView>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_2sdp"
-                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginLeft="@dimen/_4sdp"
                         android:layout_marginRight="@dimen/_4sdp"
-                        android:layout_marginBottom="@dimen/_2sdp"                    android:background="@color/white"></View>
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/Ross"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/quailId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/quail">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/Quail"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/hylinId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/hylinebrown">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/Hyline"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/isaId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/isabrown">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/ISA"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/novogenId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/novogen">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/Novogen"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bovanId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/bovans">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="তথ্যাবলী"
-                        android:textColor="#ffff"
+                        android:text="@string/Bovans"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/shaverId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/shaverbrown">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/Shaver"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sonaliId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/sonali">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/Sonali"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mctcId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mctc">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="MCTC (BLRI)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/fcrId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/fcrcalculator">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/FCR"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/calculatorfeedId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/feedcal">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="Feed Calculator"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/calculatorlightId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/lightcalculator">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black">
+
+                    </View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="Light Calculator"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/calculatorbirdcapacityId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/birdcapa">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Bird Capacity"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
                         android:textStyle="bold">
 
                     </TextView>
@@ -255,7 +871,230 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lightscheduleId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/lightingschedule">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/Lighting"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/boordingId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/broodingtemperature">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/Brooding"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/vaccinId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/vaccinationschedule">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/Vaccination"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adviceId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:src="@drawable/ic_advicer">
+
+                    </ImageView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/black">
+
+                    </View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Advice"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7815226488144324/9366147184">
+        </com.google.android.gms.ads.AdView>
+
     </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>

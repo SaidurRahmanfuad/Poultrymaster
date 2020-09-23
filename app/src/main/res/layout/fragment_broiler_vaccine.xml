@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:context=".ui.home.vaccine.BroilerVaccine">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/themeColor"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="হাঁসের জন্য - টিকা/কৃমিনাশক প্রদান কর্মসূচি\nসংক্রামক রোগ প্রতিরোধের জন্য ব্রয়লার মুরগিকে টিকা প্রধান করতে হবে। এই টিকা প্রদান কর্মসূচিটি বাংলাদেশের প্রেক্ষিতে পরীক্ষিত এবং নির্ভরযোগ্য ।"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+        </LinearLayout>
+        <TableLayout
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="বয়স (দিন)"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="রোগের নাম"
+                    android:textColor="@color/black"
+
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"/>
+
+                <TextView
+                    android:background="@color/white"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="ভ্যাকসিনের নাম"
+                    android:textColor="@color/black"
+
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"/>
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="প্রয়োগের পথ"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp" />
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="ডোজ পরিমাণ"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+
+                    android:text="৩-৪"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#BA62F0"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="রাণীক্ষেত"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#253DBA"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="বি.সি.আর.ডি.ভি"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#E66C95"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="মুখ/চোখ"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="১ ফোঁটা"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="৮"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#BA62F0"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="গামবোরো"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"/>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#253DBA"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="228E"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#E66C95"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="মুখ/চোখ"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="১ ফোঁটা"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="১৪"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#BA62F0"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="গামবোরো"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"/>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#253DBA"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="228E"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#E66C95"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="মুখ/চোখ"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="১ ফোঁটা"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="২১"
+                    android:textColor="@color/white" />
+
+                <TextView
+
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#BA62F0"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="রাণীক্ষেত"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"/>
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#253DBA"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="বি.সি.আর.ডি.ভি"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#E66C95"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="মুখ/চোখ"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="১ ফোঁটা"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </TableRow>
+        </TableLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7815226488144324/4318916201">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+
+</ScrollView>

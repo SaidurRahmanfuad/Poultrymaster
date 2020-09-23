@@ -12,17 +12,25 @@
             android:id="@+id/aboutFragment"
             android:icon="@drawable/ic_about_black_24dp"
             android:title="@string/menu_about" />
-        <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/ic_share_black"
-            android:title="@string/menu_share" />
-        <item
-            android:id="@+id/nav_rating"
-            android:icon="@drawable/ic_stars_black"
-            android:title="@string/menu_rating" />
+
+
         <item
             android:id="@+id/devFragment"
             android:icon="@drawable/ic_dev"
             android:title="@string/label_dev" />
+        <item
+            android:id="@+id/donationFragment"
+            android:icon="@drawable/ic_donationssr"
+            android:title="Donation" />
+        <item
+            android:id="@+id/socialFragment"
+            android:icon="@drawable/ic_social_media"
+            android:title="Social Media"/>
+
+        <item
+            android:id="@+id/sponsorFragment"
+            android:icon="@drawable/ic_sponsor"
+            android:title="Sponsorship"/>
+
     </group>
 </menu>

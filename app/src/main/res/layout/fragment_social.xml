@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.developer.SocialFragment">
+
+    <LinearLayout
+        android:background="@color/white"
+      android:layout_gravity="center"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/mainlogo"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+        </ImageView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fbgo"
+            android:backgroundTint="#3b5998"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp">
+
+
+                <LinearLayout
+
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/fb">
+
+                    </ImageView>
+                    <TextView
+
+                        android:layout_weight="1.45"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Facebook"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/white">
+
+                    </TextView>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1.45"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Visit"
+                        android:textStyle="bold"
+                       android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/white">
+
+                    </TextView>
+                </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/utubego"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="#c4302b "
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp">
+
+
+                <LinearLayout
+
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/utube">
+
+                    </ImageView>
+                    <TextView
+
+                        android:layout_weight="1.45"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Youtube"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/white">
+
+                    </TextView>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1.45"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Visit"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/white">
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/webgo"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="#E83270"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp">
+
+
+            <LinearLayout
+
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/web">
+
+                </ImageView>
+                <TextView
+
+                    android:layout_weight="1.45"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Website"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                </TextView>
+                <View
+                    android:background="@color/white"
+                    android:layout_width="@dimen/_3sdp"
+                    android:layout_height="match_parent">
+
+                </View>
+                <TextView
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1.45"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Visit"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/white">
+
+                </TextView>
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

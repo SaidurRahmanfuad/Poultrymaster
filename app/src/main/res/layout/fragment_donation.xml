@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.developer.DonationFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_128sdp"
+                android:layout_height="@dimen/_128sdp"
+                android:src="@drawable/mainlogo">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/themeColor"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/donation"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/white">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="#F06292"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/doationz"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/white">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7815226488144324/9366147184">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</ScrollView>

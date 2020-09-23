@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:context=".ui.home.allmenu.CompanyChicks">
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/themeColor"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company &amp; Chicks"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape_border_round"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Select Company"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:gravity="center_horizontal" />
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+        </View>
+
+        <Spinner
+
+            android:layout_weight="1"
+            android:id="@+id/spinnerchicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Broiler Chicks">
+
+        </TextView>
+
+        <View
+
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@color/white"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="match_parent">
+
+        </View>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layer Chicks">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/broilerchicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="@color/black">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/layerchicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7815226488144324/9366147184">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
+
+</ScrollView>

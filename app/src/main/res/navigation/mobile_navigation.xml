@@ -9,85 +9,347 @@
 <!--Home section-->
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.securesoft.lucid.ui.home.HomeFragment"
-        android:label="@string/label_home"
+        android:name="com.securesoft.sonalikrishi.ui.home.HomeFragment"
+        android:label="Poultry Master"
         tools:layout="@layout/fragment_home" >
+
         <action
-            android:id="@+id/action_homeFragment_to_poltriFragment"
-            app:destination="@id/poltriFragment"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/fade_out" />
+            android:id="@+id/goto_homeFragment_to_cobb_Fragment"
+            app:destination="@id/cobb_irFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_feedFragment"
-            app:destination="@id/feedFragment"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/fade_out" />
+            android:id="@+id/goto_homeFragment_to_fcr_Fragment"
+            app:destination="@id/fcr_Fragment" />
+
         <action
-            android:id="@+id/action_homeFragment_to_probFragment"
-            app:destination="@id/probFragment"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/fade_out" />
+            android:id="@+id/goto_homeFragment_to_hubbarbor_Fragment"
+            app:destination="@id/hubb_arborFragment" />
+
         <action
-            android:id="@+id/action_homeFragment_to_infoFragment"
-            app:destination="@id/infoFragment"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/fade_out" />
+            android:id="@+id/goto_homeFragment_to_rossloh_Fragment"
+            app:destination="@id/ross_lohmanFragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_sonali_Fragment"
+            app:destination="@id/sonali_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_quail_Fragment"
+            app:destination="@id/quail_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_hylin_Fragment"
+            app:destination="@id/hylin_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_isa_Fragment"
+            app:destination="@id/isa_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_novo_Fragment"
+            app:destination="@id/novo_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_bovans_Fragment"
+            app:destination="@id/bovans_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_shaver_Fragment"
+            app:destination="@id/shaver_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_mctc_Fragment"
+            app:destination="@id/mctc_Fragment" />
+
+        <action
+            android:id="@+id/goto_homeFragment_to_feedcalculator_Fragment"
+            app:destination="@id/feed_calculatorFragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_lightculator_Fragment"
+            app:destination="@id/light_calculatorFragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_birdcapacityculator_Fragment"
+            app:destination="@id/bird_capacityCalFragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_brood_Fragment"
+            app:destination="@id/brooding_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_light_Fragment"
+            app:destination="@id/light_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_vaccin_Fragment"
+            app:destination="@id/vaccin_Fragment" />
+        <action
+            android:id="@+id/goto_homeFragment_to_companychicks_Fragment"
+            app:destination="@id/company_chicksFragment" />
+
+        <action
+            android:id="@+id/goto_homeFragment_to_advice_Fragment"
+            app:destination="@id/advice_Fragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/advice_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.info.AdviceFragment"
+        android:label="Advice"
+        tools:layout="@layout/fragment_advice" >
+    </fragment>
+    <fragment
+        android:id="@+id/cobb_irFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.poultry.Cobb_irFragment"
+        android:label="Cobb and Indian Rover"
+        tools:layout="@layout/one_to_six_calculation_layout">
+    </fragment>
+    <fragment
+        android:id="@+id/bovans_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.BovansFragment"
+        android:label="@string/Bovans"
+        tools:layout="@layout/fragment_bovans">
+
+    </fragment>
+    <fragment
+        android:id="@+id/hubb_arborFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.Hubb_arborFragment"
+        android:label="Hubb and Arbor"
+        tools:layout="@layout/fragment_hubb">
+
+    </fragment>
+    <fragment
+        android:id="@+id/ross_lohmanFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.Ross_lohmanFragment"
+        android:label="Ross and Lohman"
+        tools:layout="@layout/fragment_ross">
+
+    </fragment>
+    <fragment
+        android:id="@+id/quail_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.QuailFragment"
+        android:label="@string/Quail"
+        tools:layout="@layout/fragment_quail">
+
+    </fragment>
+    <fragment
+        android:id="@+id/sonali_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.SonaliFragment"
+        android:label="Sonali"
+        tools:layout="@layout/fragment_sonali">
+
+    </fragment>
+    <fragment
+        android:id="@+id/hylin_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.HylinFragment"
+        android:label="@string/Hyline"
+        tools:layout="@layout/fragment_hylin">
+
+    </fragment>
+    <fragment
+        android:id="@+id/isa_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.IsaFragment"
+        android:label="ISA Brown"
+        tools:layout="@layout/fragment_isa">
+
+    </fragment>
+    <fragment
+        android:id="@+id/mctc_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.MctcFragment"
+        android:label="MCTC"
+        tools:layout="@layout/fragment_mctc">
+
+        <action
+            android:id="@+id/action_mctc_Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/novo_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.NovoFragment"
+        android:label="@string/Novogen"
+        tools:layout="@layout/fragment_novo">
+
+    </fragment>
+    <fragment
+        android:id="@+id/shaver_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.ShaverFragment"
+        android:label="@string/Shaver"
+        tools:layout="@layout/fragment_shaver">
+
+    </fragment>
+    <fragment
+        android:id="@+id/company_chicksFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.allmenu.CompanyChicks"
+        android:label="Company and Chicks"
+        tools:layout="@layout/fragment_company_chicks">
+
+    </fragment>
+    <fragment
+        android:id="@+id/bird_capacityCalFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.BirdCapacityCalculator"
+        android:label="Bird Capacity"
+        tools:layout="@layout/fragment_bird_capacity_calculator">
+        <action
+            android:id="@+id/goto_bird_capacityCalFragment_to_broilercapacityculator_Fragment"
+            app:destination="@id/broiler_capacityFragment" />
+        <action
+            android:id="@+id/goto_bird_capacityCalFragment_to_sonalicapacityculator_Fragment"
+            app:destination="@id/sonali_capacityFragment" />
+        <action
+            android:id="@+id/goto_bird_capacityCalFragment_to_quailcapacityculator_Fragment"
+            app:destination="@id/quail_capacityFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/feedFragment"
-        android:name="com.securesoft.lucid.ui.home.feedconversion.FeedFragment"
+        android:id="@+id/broiler_calculatorFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.BroilerCalculator"
+        android:label="Broiler Calculator"
+        tools:layout="@layout/fragment_broiler_calculator">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/broiler_capacityFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.BroilerCapacity"
+        android:label="Broiler Capacity"
+        tools:layout="@layout/fragment_broiler_capacity">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/feed_calculatorFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.FeedCalculator"
+        android:label="Feed Calculator"
+        tools:layout="@layout/fragment_feed_calculator">
+        <action
+            android:id="@+id/goto_feed_calculatorFragment_to_broilerfeedcalculator_Fragment"
+            app:destination="@id/broiler_calculatorFragment" />
+        <action
+            android:id="@+id/goto_feed_calculatorFragment_to_sonalifeedcalculator_Fragment"
+            app:destination="@id/sonali_calculatorFragment" />
+        <action
+            android:id="@+id/goto_feed_calculatorFragment_to_layerfeedcalculator_Fragment"
+            app:destination="@id/layer_calculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/layer_calculatorFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.LayerCalculator"
+        android:label="Layer Feed Calculator"
+        tools:layout="@layout/fragment_layer_calculator">
+
+    </fragment>
+    <fragment
+        android:id="@+id/light_calculatorFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.LightCalculator"
+        android:label="Light Calculator"
+        tools:layout="@layout/fragment_light_calculator">
+
+    </fragment>
+    <fragment
+        android:id="@+id/quail_capacityFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.QuailCapacity"
+        android:label="Quail Capacity"
+        tools:layout="@layout/fragment_quail_capacity">
+
+    </fragment>
+    <fragment
+        android:id="@+id/sonali_calculatorFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.SonaliCalculator"
+        android:label="Sonali Feed Calculator"
+        tools:layout="@layout/fragment_sonali_calculator">
+
+    </fragment>
+    <fragment
+        android:id="@+id/sonali_capacityFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.SonaliCapacity"
+        android:label="Sonali Capacity"
+        tools:layout="@layout/fragment_sonali_capacity">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fcr_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.calculators.FeedFragment"
         android:label="@string/label_feed"
-        tools:layout="@layout/fragment_feed" >
-        <action
-            android:id="@+id/action_feedFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:enterAnim="@android:anim/slide_out_right"
-            app:exitAnim="@android:anim/fade_in" />
-    </fragment>
+        tools:layout="@layout/fragment_feed" />
     <fragment
-        android:id="@+id/poltriFragment"
-        android:name="com.securesoft.lucid.ui.home.poultry.PoltriFragment"
-        android:label="@string/label_poultry"
-        tools:layout="@layout/fragment_poltri" >
+        android:id="@+id/brooding_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.BordingFragment"
+        android:label="@string/Brooding"
+        tools:layout="@layout/fragment_bording" />
+    <fragment
+        android:id="@+id/light_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.LightSchedule"
+        android:label="@string/Lighting"
+        tools:layout="@layout/fragment_light" />
+    <fragment
+        android:id="@+id/vaccin_Fragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.VaccinFragment"
+        android:label="@string/Vaccination"
+        tools:layout="@layout/fragment_vaccin">
+
         <action
-            android:id="@+id/action_poltriFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/goto_vacineFragment_to_broilervaccine_Fragment"
+            app:destination="@id/broiler_vaccineFragment" />
+        <action
+            android:id="@+id/goto_vacineFragment_to_layervaccine_Fragment"
+            app:destination="@id/layer_vaccineFragment" />
+        <action
+            android:id="@+id/goto_vacineFragment_to_sonalivaccine_Fragment"
+            app:destination="@id/soali_vaccineFragment" />
+        <action
+            android:id="@+id/goto_vacineFragment_to_duckvaccine_Fragment"
+            app:destination="@id/duck_vaccineFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/probFragment"
-        android:name="com.securesoft.lucid.ui.home.problemnsol.ProbFragment"
-        android:label="@string/label_problem"
-        tools:layout="@layout/fragment_prob" />
-
+        android:id="@+id/broiler_vaccineFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.vaccine.BroilerVaccine"
+        android:label="Broiler Vaccine Schedule"
+        tools:layout="@layout/fragment_broiler_vaccine" />
     <fragment
-        android:id="@+id/infoFragment"
-        android:name="com.securesoft.lucid.ui.home.info.InfoFragment"
-        android:label="@string/label_info"
-        tools:layout="@layout/fragment_info">
-        <action
-            android:id="@+id/action_poltriFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+        android:id="@+id/layer_vaccineFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.vaccine.LayerVaccine"
+        android:label="Layer Vaccine Schedule"
+        tools:layout="@layout/fragment_layer_vaccine" />
+    <fragment
+        android:id="@+id/soali_vaccineFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.vaccine.SonaliVaccine"
+        android:label="Sonali Vaccine Schedule"
+        tools:layout="@layout/fragment_sonali_vaccine" />
+    <fragment
+        android:id="@+id/duck_vaccineFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.vaccine.DuckVaccine"
+        android:label="Duck Vaccine Schedule"
+        tools:layout="@layout/fragment_duck_vaccine" />
+
 
    <!-- Bottom navigation section-->
     <fragment
         android:id="@+id/helpFragment"
-        android:name="com.securesoft.lucid.ui.help.HelpFragment"
+        android:name="com.securesoft.sonalikrishi.ui.help.HelpFragment"
         android:label="@string/label_help"
         tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.problemnsol.Team"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_prob" />
 
 <!--Navigation Drware section-->
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.securesoft.lucid.ui.about.AboutFragment"
+        android:name="com.securesoft.sonalikrishi.ui.about.AboutFragment"
         android:label="@string/menu_about"
         tools:layout="@layout/fragment_about" />
+
     <fragment
         android:id="@+id/devFragment"
-        android:name="com.securesoft.lucid.ui.about.AboutFragment"
+        android:name="com.securesoft.sonalikrishi.ui.developer.DevFragment"
         android:label="@string/label_dev"
         tools:layout="@layout/fragment_dev" />
-
+    <fragment
+        android:id="@+id/donationFragment"
+        android:name="com.securesoft.sonalikrishi.ui.developer.DonationFragment"
+        android:label="Donate Me"
+        tools:layout="@layout/fragment_donation" />
+    <fragment
+        android:id="@+id/socialFragment"
+        android:name="com.securesoft.sonalikrishi.ui.developer.SocialFragment"
+        android:label="Social Media"
+        tools:layout="@layout/fragment_social" />
+    <fragment
+        android:id="@+id/sponsorFragment"
+        android:name="com.securesoft.sonalikrishi.ui.home.info.SponsorFragment"
+        android:label="Sponsor"
+        tools:layout="@layout/fragment_info" />
 </navigation>

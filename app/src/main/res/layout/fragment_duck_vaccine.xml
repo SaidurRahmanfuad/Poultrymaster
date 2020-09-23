@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.vaccine.DuckVaccine">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/themeColor"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="হাঁসের জন্য - টিকা/কৃমিনাশক প্রদান কর্মসূচি"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:weightSum="3.8"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="রোগের নাম"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"/>
+
+                <TextView
+                    android:background="@color/white"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="টিকার নাম"
+                    android:textColor="@color/black"
+
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"/>
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="প্রয়োগের পথ"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp" />
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="প্রয়োগ পদ্ধতি"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3.8"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#BA62F0"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="ডাক পেগ"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#253DBA"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="ডাক কলেরা টীকা"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight=".8"
+                    android:background="#E66C95"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="প্রথম মাত্রা ২১-২৮ দিন বয়সে দ্বিতীয় মাত্রা (বুষ্টার ডোজ) ১ম মাত্রার ১৫ দিন পর অর্থাৎ ৩৬-৪৩ দিন বয়সে পরবর্তী প্রতি ৪-৫ মাস পর পর একবার ।"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="১ সিসি করে বুকের মাংসে প্রয়োগ"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3.8"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#BA62F0"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="ডাক কলেরা"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"/>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#253DBA"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="ডাক কলেরা টীকা"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight=".8"
+                    android:background="#E66C95"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="প্রথম মাত্রা ৪৫-৬০ দিন বয়সে দ্বিতীয় মাত্রা (বুষ্টার ডোজ)\n১ম মাত্রার ১৫ দিন পর অথ্যাৎ ৬০-৭৫ দিন বয়সে পরবর্তী প্রতি ৪-৫ মাস পর পর একবার ।"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/themeColor"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="১ সিসি করে চামড়ার নীচে প্রয়োগ।"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7815226488144324/8879131832">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</ScrollView>

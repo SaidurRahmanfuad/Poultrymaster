@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.home.feedconversion.FeedFragment">
+    tools:context=".ui.home.calculators.FeedFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -50,11 +50,12 @@
                   android:textStyle="bold"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:text="Number of birds when started"
+                  android:text="Total amount of feed intake (Kg)"
                   android:textColor="@color/design_default_color_on_secondary"/>
 
               <EditText
-
+                  android:inputType="numberDecimal"
+                  android:id="@+id/feed_intakeId"
                   android:background="@drawable/shape_border_round"
                   android:layout_weight="2"
                   android:layout_width="match_parent"
@@ -78,19 +79,21 @@
                     android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Number of birds dead+culled"
+                    android:text="Total Body weight of birds (Kg)"
                     android:textColor="@color/design_default_color_on_secondary"/>
 
                 <EditText
+                    android:id="@+id/body_weightId"
                     android:layout_marginLeft="@dimen/_3sdp"
                     android:background="@drawable/shape_border_round"
                     android:layout_weight="2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal">
 
                 </EditText>
             </LinearLayout>
-            <LinearLayout
+         <!--   <LinearLayout
                 android:layout_marginRight="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:orientation="horizontal"
@@ -140,7 +143,7 @@
                     android:layout_height="wrap_content">
 
                 </EditText>
-            </LinearLayout>
+            </LinearLayout>-->
 
 
         </LinearLayout>
@@ -176,34 +179,38 @@
             <LinearLayout
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
                 android:weightSum="3"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_weight=".5"
+                    android:layout_weight="1"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="FCR (Considering Morality)">
+                    android:text="FCR "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black">
 
                 </TextView>
                 <TextView
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:id="@+id/result_fcrId"
                     android:paddingLeft="@dimen/_2sdp"
                     android:drawableLeft="@drawable/ic_equal"
-                    android:id="@+id/result_fcr_show"
-                    android:layout_weight="2.5"
+                    android:layout_weight="2"
                     android:textAlignment="textEnd"
                     android:layout_gravity="end"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3.77"
-                    android:textColor="@color/design_default_color_on_secondary">
+                    android:textColor="@color/black">
 
                 </TextView>
             </LinearLayout>
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
@@ -233,7 +240,7 @@
                     android:textColor="@color/design_default_color_on_secondary">
 
                 </TextView>
-            </LinearLayout>
+            </LinearLayout>-->
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -245,6 +252,7 @@
     android:layout_height="wrap_content">
 
     <Button
+        android:id="@+id/cleareId"
         android:textAllCaps="false"
         android:backgroundTint="@color/design_default_color_error"
         android:text="Cleare All"
@@ -257,6 +265,7 @@
     </Button>
 
     <Button
+        android:id="@+id/calculateId"
         android:textAllCaps="false"
         android:backgroundTint="@color/themeColor"
         android:layout_margin="@dimen/_5sdp"
@@ -268,4 +277,15 @@
 
     </Button>
 </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7815226488144324/4318916201">
+    </com.google.android.gms.ads.AdView>
 </LinearLayout>

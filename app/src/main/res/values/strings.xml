@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lucid</string>
+    <string name="app_name">Poultry Master</string>
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,11 +8,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <!--bottom option menu-->
     <string name="menu_service">Service</string>
-    <string name="menu_menu">Menu</string>
+    <string name="menu_menu">Team</string>
     <string name="menu_home">Home</string>
     <string name="menu_help">Help</string>
 
-    <string name="menu_about">App Summary</string>
+    <string name="menu_about">About</string>
     <string name="menu_share">Share with your Friends</string>
     <string name="menu_rating">Give me Rating</string>
 
@@ -27,4 +27,88 @@
     <string name="label_info">Information Hub</string>
     <string name="label_help">Need Help? Call Expart</string>
     <string name="label_dev">Know Developer</string>
+
+    <!-- Murgi Name-->
+    <string name="Cobb">Cobb 500 &amp; IR</string>
+    <string name="Hubbard">Hubbard &amp; Arbor</string>
+    <string name="Ross">Ross &amp; Lohmann</string>
+    <string name="Sonali">Sonali Chicken</string>
+    <string name="White">White Cock</string>
+    <string name="Quail">Quail</string>
+    <string name="Hyline">Hyline Brown</string>
+    <string name="ISA">ISA Brown</string>
+    <string name="Novogen">Novogen</string>
+    <string name="Bovans">Bovans Brown</string>
+    <string name="Shaver">Shaver Brown</string>
+    <string name="Lohmann">Lohmann White</string>
+    <string name="Company">Company wise Breed Name</string>
+    <string name="Companybreed">Company &amp; Chicks</string>
+    <string name="FCR">FCR Calculator</string>
+    <string name="Brooding">Brooding Temperature</string>
+    <string name="Lighting">Lighting Schedule</string>
+    <string name="Vaccination">Vaccination Schedule</string>
+    <string name="VaccinationFarm">Vaccination Schedule (Farm Management Tips)</string>
+
+    <!--About text-->
+    <string name="about">Poultry Master app is Specially developed for Poultry Professionals like Veterinarians, Animal Husbandrians, Students, Feed Millers, Medicine Company Employees and Poultry Farmers. By using this app they will get standard performance data of Broiler Strain (Cobb 500, Indian River, Hubbard, Lohmann, Ross 308, Arbor Acres), Layer Strains (Hyline Brown, ISA Brown, Novogen, Bovans Brown, Shaver Brown), Sonali Chicken, MCTC (BLRI), Quail Birds.
+        \n\nStandard performance data will show age wise daily feed intake, cumulative feed intake, average body weight, egg production percentage, average egg weight, number of feeder and waterer required, lighting hour required, floor space required.\n\nIn addition, you will get information on company wise strain/breed name, age wise brooding temperature,lighting schedule, vaccination schedule.\n\nWe have added some important calculator to easily calculate FCR (Feed Coversion Ratio), Feed Calculator (Broiler,Layer,Sonali),Bird Capacity Calculator,Light Calculator and some managemental advice in this awesome app.
+    \n\nWe hope that, this app will help the freshers to successful visiting of Broiler, Layer, Quail and Sonali Chicken Farms with confidance.</string>
+    <string name="sponsor">To be a Sponsor of this app, Please Feel Free to contact:\n\nDr. Srabon Hasan Sajal\nDeveloper, Poultry Master\nCell: +8801775662647\nEmail: sonalikrishi2019@gmail.com</string>
+
+    <!-- Developer text-->
+    <string name="developer">Dr. Srabon Hasan Sajal\nHe is the developer of “Poultry Master” App and a dedicated veterinarian of Bangladesh.He has completed his DVM degree from Patuakhali Science and Technology University,Bangladesh.He is trying to contribute in digitalisation of Livestock sector of Bangladesh.\n\nHe keeps writing livestock related article for farmers and published via www.sonalikrishi.com. He also shares practical knowledge of farming methods via youtube channel www.youtube.com/DrSrabonHasanSajal and his channel is verified &amp; youtube silver play button awarded.
+For the publicity of agriculture and  livestock sector he has established www.agrilive24.com an online newspaper.
+\n\nHe has taken an initiative for digital marketing of livestock products through establishing www.farm2bazar.com an online marketplace for farmers to buy and sell directly to their potential customers.
+\n\nSome others initiative taken by Dr. Sajal in the field of livestock are-
+\nwww.vetshopbd.com
+\nwww.facebook.com/vetshopbd
+\nwww.facebokk.com/farm2bazar
+\nwww.facebook.com/poultrymasterapp
+\nwww.facebook.com/hellolivestock
+\n\nProfile:
+\nDr.Srabon Hasan Sajal
+\nDVM,PSTU
+\nCell: +8801775662647
+\nEmail:sonalikrishi2019@gmail.com
+\nFacebook: https://facebook.com/srabonhasan.sajal
+</string>
+
+    <!--  Donation Text-->
+    <string name="donation">We have developed this app for the veterinarians and is 100% free for all.  If you are pleased with this app then please Don’t forget to donate us for further development and upgradation of such helpful app for you.
+You can contribute to inspire us to develop such helpful apps through donating via Bkash/Rocket/Nagad (Bangladeshi) &amp; Wire Transfer for Others.
+</string>
+    <string name="doationz">Here is the information for DONATION-
+\nbKash personal: 01775662647
+\nRocket personal: 01775662647-1
+\nNagad personal: 01775662647
+\nN:B: You can use reference code as “PM” during send money.
+\n\nWire Transfer:
+\nAccount Name: Sajal
+\nAccount No. 17110521851
+\nBank: Dutch Bangla Bank Limited
+\nSwift Code: DBBLBDDH</string>
+    <string name="notebulb">This Calculator is only for Energy Saving Bulb.But if you use LED Bulb then Calculate as, \n1 watt LED bulb = 3 watt Energy Bulb
+    \n\nLight should be hanging above 6 to 7 feet above from floor</string>
+
+    <string name="broilercalcunote">Note: If you don’t use Broiler Finisher Feed then replace  amount of finisher feed by Broiler Grower Feed.</string>
+    <string name="notesonalicalcunote">Note: If you don’t use Sonali Finisher Feed then replace  amount of finisher feed by Sonali Grower Feed.</string>
+    <string name="layercalcunote">Note: If you don’t use Sonali Finisher Feed then replace  amount of finisher feed by Sonali Grower Feed.</string>
+    <string name="haserproyog1">প্রথম মাত্রা ২১-২৮ দিন বয়সে দ্বিতীয় মাত্রা (বুষ্টার ডোজ) ১ম মাত্রার ১৫ দিন পর অর্থাৎ ৩৬-৪৩ দিন বয়সে পরবর্তী প্রতি ৪-৫ মাস পর পর একবার ।</string>
+    <string name="degree_sj">DVM (Doctor of Veterinary Medicine)</string>
+    <string name="sajal">Dr. Srabon Hasan Sajal</string>
+    <string name="sajaldeg">MS (Fellow) in Pathology</string>
+    <string name="sajalphn">+8801775662647</string>
+    <string name="sajalweb">https://sonalikrishi.com</string>
+    <string name="sajalmail">sonalikrishi2019@gmail.com</string>
+    <string name="sajalp_vrct">Patuakhali Science and Technology University</string>
+    <string name="said">Engg. Saidur Rahman</string>
+    <string name="vrct"><![CDATA[Bsc. in Computer Science & Engineering]]></string>
+    <string name="dgvr">Daffodil International University</string>
+    <string name="ff">Android App Developer at Securesoft</string>
+    <string name="nmb">+8801793208341</string>
+    <string name="fy">devsaidur@gmail.com</string>
+    <string name="fdg">Kaji Obaydullah</string>
+    <string name="gg">Student,DVM, PSTU</string>
+    <string name="gh">+8801701073348</string>
+    <string name="gj">kajiobaydulla@gmail.com</string>
 </resources>
